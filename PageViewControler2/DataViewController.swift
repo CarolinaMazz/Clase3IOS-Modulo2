@@ -13,10 +13,13 @@ class DataViewController: UIViewController {
     @IBOutlet weak var dataLabel: UILabel!
     var dataObject: String = ""
 
+    @IBOutlet weak var contenido: UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        self.dataLabel!.text = dataObject
+        self.contenido.text = "Cantenido de la pagina " + dataObject
     }
 
     override func didReceiveMemoryWarning() {
